@@ -1,3 +1,3 @@
 
-echo "Hello iamhappyXD!"
+echo "Hello IamhappyXD!"
 
