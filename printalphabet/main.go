@@ -1,9 +1,12 @@
 package main
-import "fmt"
-func main(){
-	for i:= 97;i<122;i++{
-	ch:= rune(i)
-	fmt.Printf("%c", ch)
+
+import "github.com/01-edu/z01"
+
+func main() {
+	var aRune string = "abcdefghijklmnopqrstuvwxyz"
+	for i := 0; i < 26; i++ {
+		z01.PrintRune(rune(aRune[i]))
 	}
-	fmt.Printf("\n")
+	var bRune rune = '\n'
+	z01.PrintRune(bRune)
 }
