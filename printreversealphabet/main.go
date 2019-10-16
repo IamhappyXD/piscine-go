@@ -4,7 +4,7 @@ import "github.com/01-edu/z01"
 import "fmt"
 
 func main() {
-	for i := 122; i > 96; i-- {	 
+	for i := 122; i > 96; i-- {
 		ch := string(i)
 		fmt.Printf(ch)
 	}
