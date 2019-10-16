@@ -1,9 +1,9 @@
 package main
 import "github.com/01-edu/z01"
-func main(){
+func main() {
 	
-	var aRune string ="abcdefghijklmnopqrstuvwxyz"
-	for i:= 0;i<26;i++{
+	var aRune string = "abcdefghijklmnopqrstuvwxyz"
+	for i := 0; i <26; i++ {
 		z01.PrintRune(rune(aRune[i]))
 	}
 	var bRune rune = '\n'
