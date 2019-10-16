@@ -7,6 +7,5 @@ func main() {
 	for i := 25; i >= 0; i-- {
 		z01.PrintRune(rune(aRune[i]))
 	}
-	var bRune rune = '\n'
-	z01.PrintRune(bRune)
+	z01.PrintRune('\n')
 }
