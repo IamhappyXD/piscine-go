@@ -7,5 +7,5 @@ func main() {
 	for i := 25; i >= 0; i-- {
 		z01.PrintRune(rune(xRune[i]))
 	}
-	z01.PrintRune('\n')
+	z01.PrintRune(10)
 }
