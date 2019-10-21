@@ -8,12 +8,15 @@ func Sqrt(nb int) int {
 	} else {
 		result := 1
 		i := 1
-		for result <= nb {
+		for result < nb {
 			result = i * i
 			i++
+
 		}
+		i--
+
 		if i*i == nb {
-			return i - 1
+			return i
 		} else {
 			return 0
 		}
