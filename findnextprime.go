@@ -8,13 +8,12 @@ func FindNextPrime(nb int) int {
 		i := nb
 
 		for i < nb+12 {
-
 			if (nb > 10) && ((i%2 == 0) || (i%10 == 2) || (i%10 == 5) || (i%10 == 0)) {
 				i++
 				continue
 			} else {
 				check := 0
-				for j := 3; j < i; j := j + 2 {
+				for j := 2; j < i; j++ {
 					if i%j == 0 {
 						check++
 						break
@@ -24,15 +23,16 @@ func FindNextPrime(nb int) int {
 						break
 					}
 				}
+
 				if check == 0 {
 					return i
 				}
 				i++
+
 			}
 
 		}
 		return nb
 
 	}
-
 }
