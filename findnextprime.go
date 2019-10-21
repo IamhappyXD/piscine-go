@@ -1,0 +1,33 @@
+package main
+
+import "fmt"
+
+func FindNextPrime(nb int) int {
+	if 1 >= nb {
+		return 2
+	} else {
+		for i := nb; i < nb+100; i++ {
+			check := 0
+			for j := 2; j < i; j++ {
+				if i%j == 0 {
+					check++
+					break
+				}
+				if i%(j*j) == 0 {
+					check++
+					break
+				}
+			}
+			if check == 0 {
+				return i
+			}
+		}
+		return nb
+	}
+
+}
+
+func main() {
+	fmt.Println(FindNextPrime(5))
+	fmt.Println(FindNextPrime(20))
+}
