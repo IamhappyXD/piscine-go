@@ -18,6 +18,10 @@ func FindNextPrime(nb int) int {
 						check++
 						break
 					}
+					if i%(j*j) == 0 {
+						check++
+						break
+					}
 				}
 				if check == 0 {
 					return i
