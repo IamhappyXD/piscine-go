@@ -4,6 +4,7 @@ func FindNextPrime(nb int) int {
 	if nb <= 1 || nb == 2 {
 		return 2
 	} else {
+
 		i := nb
 
 		for i < nb+12 {
@@ -13,7 +14,7 @@ func FindNextPrime(nb int) int {
 				continue
 			} else {
 				check := 0
-				for j := 2; j < i; j++ {
+				for j := 3; j < i; j := j + 2 {
 					if i%j == 0 {
 						check++
 						break
