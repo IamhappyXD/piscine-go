@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package piscine
 
 func TrimAtoi(s string) int {
 	var a []int
@@ -12,9 +10,7 @@ func TrimAtoi(s string) int {
 			a = append(a, int(check[i])-48)
 			count++
 		}
-		if check[i] == 45 {
-			minus++
-		}
+
 	}
 
 	if count == 0 {
@@ -26,15 +22,9 @@ func TrimAtoi(s string) int {
 			x += a[i]
 
 		}
-		if minus > 0 {
-			return 0 - x
-		} else {
-			return x
-		}
+
+		return x
 
 	}
 
-}
-func main() {
-	fmt.Println(TrimAtoi("sdx1-fa2W3s4"))
 }
