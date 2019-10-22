@@ -7,7 +7,5 @@ func NRune(s string, n int) rune {
 			return check[i]
 		}
 	}
-	if n > i || n == i+1 {
-		return ""
-	}
+	return 0
 }
