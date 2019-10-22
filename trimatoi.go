@@ -5,13 +5,17 @@ func TrimAtoi(s string) int {
 	check := []rune(s)
 	count := 0
 	minus := 0
+	no := 0
 	for i := range check {
+		if check[i] == 45 {
+			minus++
+		}
 		if check[i] >= 48 && check[i] <= 57 {
 			a = append(a, int(check[i])-48)
 			count++
-		}
-		if check[i] == 45 {
-			minus++
+			if minus == 0 {
+				no++
+			}
 		}
 
 	}
@@ -24,11 +28,11 @@ func TrimAtoi(s string) int {
 			x += a[i]
 
 		}
-		if minus == 0 {
+		if minus == 0 || no > 0 {
 			return x
 		} else {
-			x *= (-1)
-			return x
+			return -x
+
 		}
 
 	}
