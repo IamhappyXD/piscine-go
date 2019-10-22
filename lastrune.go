@@ -5,6 +5,9 @@ func LastRune(s string) rune {
 	count := 1
 	for i := range check {
 		count++
+		if check[i] == 0 {
+			return 0
+		}
 	}
 	return check[count]
 }
