@@ -1,4 +1,6 @@
-package piscine
+package main
+
+import "fmt"
 
 func TrimAtoi(s string) int {
 	var a []int
@@ -25,11 +27,14 @@ func TrimAtoi(s string) int {
 
 		}
 		if minus > 0 {
-			return -x
+			return 0 - x
 		} else {
 			return x
 		}
 
 	}
 
+}
+func main() {
+	fmt.Println(TrimAtoi("sdx1-fa2W3s4"))
 }
