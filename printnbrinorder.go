@@ -20,8 +20,8 @@ func PrintNbrInOrder(n int) {
 			ch /= 10
 			i++
 		}
-		for j := 0; j < i-1; j++ {
-			for k := j + 1; k < i-1; k++ {
+		for j := 0; j < i; j++ {
+			for k := j + 1; k < i; k++ {
 				if a[j] > a[k] {
 					temp := a[j]
 					a[j] = a[k]
