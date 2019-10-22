@@ -6,9 +6,9 @@ import (
 
 func PrintNbrInOrder(n int) {
 	if n <= 0 {
-		z01.PrintRune(0)
+		z01.PrintRune(48)
 	} else if 1 <= n && n <= 9 {
-		x := rune(n)
+		x := rune(n + 48)
 		z01.PrintRune(x)
 	} else {
 		i := 0
@@ -29,8 +29,8 @@ func PrintNbrInOrder(n int) {
 		}
 
 		for j := 0; j < i; j++ {
-			ai := rune(a[j])
-			z01.PrintRune(ai)
+			x := rune(a[j])
+			z01.PrintRune(x + 48)
 		}
 
 	}
