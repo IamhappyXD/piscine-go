@@ -21,11 +21,14 @@ func PrintNbrInOrder(n int) {
 			i++
 		}
 		for j := 0; j < i-1; j++ {
-			if a[j] > a[j+1] {
-				temp := a[j+1]
-				a[j] = a[j+1]
-				a[j+1] = temp
+			for k := j; k < i-1; k++ {
+				if a[k] > a[k+1] {
+					temp := a[k]
+					a[k] = a[k+1]
+					a[k+1] = temp
+				}
 			}
+
 		}
 
 		for j := 0; j < i; j++ {
