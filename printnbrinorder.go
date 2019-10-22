@@ -9,7 +9,7 @@ func PrintNbrInOrder(n int) {
 		z01.PrintRune(0)
 	} else if 1 <= n && n <= 9 {
 		x := rune(n)
-		z01.PrintRune(n)
+		z01.PrintRune(x)
 	} else {
 		i := 0
 		ch := n
