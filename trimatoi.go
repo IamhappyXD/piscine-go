@@ -3,7 +3,6 @@ package piscine
 func TrimAtoi(s string) int {
 	var a []int
 	check := []rune(s)
-	minus := 0
 	count := 0
 	for i := range check {
 		if check[i] >= 48 && check[i] <= 57 {
