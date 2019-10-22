@@ -27,8 +27,8 @@ func TrimAtoi(s string) int {
 		if minus == 0 {
 			return x
 		} else {
-			min := 0 - x
-			return min
+			x *= (-1)
+			return x
 		}
 
 	}
