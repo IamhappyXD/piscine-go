@@ -14,7 +14,7 @@ func PrintNbrInOrder(n int) {
 		i := 0
 		ch := n
 		var a []int
-		for 1 < ch {
+		for 0 < ch {
 			a = append(a, ch%10)
 			ch -= (ch % 10)
 			ch /= 10
