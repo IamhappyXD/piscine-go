@@ -28,7 +28,7 @@ func PrintNbrInOrder(n int) {
 		}
 
 		for j := 0; j < i; j++ {
-			z01.Print(a[j])
+			z01.PrintRune(a[j])
 		}
 
 	}
