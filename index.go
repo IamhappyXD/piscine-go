@@ -7,24 +7,28 @@ func Index(s string, toFind string) int {
 	count := 0
 	total := 0
 
+	for j := range check {
+		total++
+		if check[j] == 0 {
+			return 0
+		}
+	}
+
 	for i := range main {
 		for j := range check {
 			if main[i] == check[j] {
 				count++
-			} else {
-				break
 			}
-			total++
 
 		}
-
-		if total == count && total > 0 {
+		ind++
+		if total == count {
 			return ind
 		} else {
 			count = 0
 			total = 0
 		}
-		ind++
+
 	}
 	return -1
 }
