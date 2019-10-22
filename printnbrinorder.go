@@ -1,4 +1,4 @@
-package main
+package piscine
 
 import (
 	"github.com/01-edu/z01"
@@ -21,7 +21,7 @@ func PrintNbrInOrder(n int) {
 			i++
 		}
 		for j := 0; j < i-1; j++ {
-			for k := j + 1; k < i-1; k++ {
+			for k := j+1; k < i-1; k++ {
 				if a[j] > a[k] {
 					temp := a[j]
 					a[j] = a[k]
@@ -37,7 +37,4 @@ func PrintNbrInOrder(n int) {
 		}
 
 	}
-}
-func main() {
-	PrintNbrInOrder(9223372036854775807)
 }
