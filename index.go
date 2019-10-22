@@ -22,8 +22,10 @@ func Index(s string, toFind string) int {
 
 		}
 		ind++
-		if total == count {
+		if total == count && count != ind {
 			return ind
+		} else if count == ind {
+			return 0
 		} else {
 			count = 0
 			total = 0
