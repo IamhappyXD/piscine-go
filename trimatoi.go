@@ -19,7 +19,7 @@ func TrimAtoi(s string) int {
 		return 0
 	} else {
 		x := 0
-		for i := 0; i < len(a); i++ {
+		for i := 0; i < count; i++ {
 			x *= 10
 			x += a[i]
 
