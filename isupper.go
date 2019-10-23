@@ -9,3 +9,4 @@ func IsUpper(str string) bool {
 			return false
 		}
 	}
+}
