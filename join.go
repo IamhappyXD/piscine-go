@@ -4,9 +4,15 @@ func Join(strs []string, sep string) string {
 
 	a := ""
 	i := 0
-	for i < len(strs) {
+	lenstrs := 0
+	for j := range strs {
+		j++
+		lenstrs = j
+
+	}
+	for i < lenstrs {
 		a = a + strs[i]
-		if i == len(strs)-1 {
+		if i == lenstrs-1 {
 			break
 		}
 		a = a + sep
