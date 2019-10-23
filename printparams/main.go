@@ -1,5 +1,10 @@
 package piscine
 
+import (
+	"github.com/01-edu/z01"
+	"os"
+)
+
 func main() {
 	count := 0
 	for x := range os.Args {
