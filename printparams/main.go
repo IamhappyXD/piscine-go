@@ -6,12 +6,12 @@ import (
 )
 
 func main() {
-	count := 0
+	count := 1
 	for x := range os.Args {
 		count = x
 	}
 	i := 1
-	for i <= count {
+	for i < count {
 		out := []rune(os.Args[i])
 		for _, j := range out {
 			z01.PrintRune(j)
