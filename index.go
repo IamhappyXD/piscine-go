@@ -20,7 +20,7 @@ func Index(s string, toFind string) int {
 	if chlen <= mlen {
 		j := 0
 		ind := 0
-		for i := 0; i < mlen+1; i++ {
+		for i := 0; i < mlen; i++ {
 			if main[i] == check[j] {
 				j++
 				if j == chlen {
