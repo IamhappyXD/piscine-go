@@ -1,11 +1,13 @@
 package piscine
 
-func IsUpper(str string) bool {
+func IsPrintable(str string) bool {
 	check := []rune(str)
 	for i := range check {
-		if 65 <= check[i] && check[i] <= 90 {
+		if 33 <= check[i] && check[i] <= 126 {
 			continue
 		} else {
 			return false
 		}
 	}
+	return true
+}
