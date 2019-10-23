@@ -17,7 +17,7 @@ func main() {
 			z01.PrintRune(j)
 		}
 		z01.PrintRune(10)
-		i++
+		i--
 	}
 
 }
