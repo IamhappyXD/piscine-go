@@ -8,4 +8,5 @@ func ToUpper(s string) string {
 		}
 	}
 	return string(check)
+
 }
