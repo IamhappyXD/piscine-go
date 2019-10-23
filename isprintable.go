@@ -8,6 +8,7 @@ func IsPrintable(str string) bool {
 		} else {
 			return false
 		}
+
 	}
 	return true
 }
