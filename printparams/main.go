@@ -1,4 +1,4 @@
-package piscine
+package main
 
 import (
 	"github.com/01-edu/z01"
@@ -7,11 +7,11 @@ import (
 
 func main() {
 	count := 1
-	for x := range os.Args {
-		count = x
+	for range os.Args {
+		count++
 	}
 	i := 1
-	for i < count {
+	for i <= count {
 		out := []rune(os.Args[i])
 		for _, j := range out {
 			z01.PrintRune(j)
