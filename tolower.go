@@ -1,6 +1,6 @@
 package piscine
 
-func ToUpper(s string) string {
+func ToLower(s string) string {
 	check := []rune(s)
 	for i := range check {
 		if 65 <= check[i] && check[i] <= 90 {
