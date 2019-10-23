@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package piscine
 
 func Capitalize(s string) string {
 	check := []rune(s)
@@ -28,8 +26,4 @@ func Capitalize(s string) string {
 		}
 	}
 	return string(check)
-}
-
-func main() {
-	fmt.Println(Capitalize("J*+4bGZX(dB}U"))
 }
