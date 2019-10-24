@@ -10,7 +10,7 @@ func tonumber(str string) int {
 	ans := 0
 	i := 0
 	for _, s := range check {
-		if s >= 49 && s <= 57 {
+		if s >= 48 && s <= 57 {
 			ans = ans*10 + (int(s) - 48)
 		} else {
 			return 32
