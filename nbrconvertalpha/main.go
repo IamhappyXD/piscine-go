@@ -44,5 +44,6 @@ func main() {
 		num := tonumber(os.Args[i])
 		z01.PrintRune(rune(num + a))
 	}
+	z01.PrintRune(10)
 
 }
