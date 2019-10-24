@@ -12,12 +12,12 @@ func main() {
 		count++
 	}
 
-	for i :=0;i<count-1;i++{
-		for j:=i+1;j<count-1;j++{
-			if os.Args[i]>os.Args[j]{
+	for i := 0; i < count-1; i++ {
+		for j := i + 1; j < count-1; j++ {
+			if os.Args[i] > os.Args[j] {
 				temp := os.Args[j]
-				os.Args[j]=os.Args[i]
-				os.Args[i]=temp
+				os.Args[j] = os.Args[i]
+				os.Args[i] = temp
 			}
 		}
 	}
@@ -30,6 +30,5 @@ func main() {
 		z01.PrintRune(10)
 		i++
 	}
-	
 
 }
