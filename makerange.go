@@ -2,7 +2,7 @@ package piscine
 
 func MakeRange(min, max int) []int {
 	if max <= min {
-		answer := make([]int, 0)
+		var answer []int
 		return answer
 	} else {
 		answer := make([]int, max-min)
