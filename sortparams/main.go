@@ -12,7 +12,7 @@ func main() {
 		count++
 	}
 
-	for i := 0; i < count-1; i++ {
+	for i := 1; i < count-1; i++ {
 		for j := i + 1; j < count-1; j++ {
 			if os.Args[i] > os.Args[j] {
 				temp := os.Args[j]
