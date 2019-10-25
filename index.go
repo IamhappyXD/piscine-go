@@ -1,51 +1,50 @@
-package main
-import "fmt"
+package piscine
 
 func Index(s string, toFind string) int {
 	main := []rune(s)
 	check := []rune(toFind)
-	ind := 0
-	count := 0
-	total := 0
-
+	chlen := 0
+	mlen := 0
 	for j := range check {
-		total++
 		if check[j] == 0 {
 			return 0
 		}
+		chlen++
 	}
 	for j := range main {
-		count++
 		if main[j] == 0 {
 			return 0
 		}
+		mlen++
 	}
-	if total>count{
-		return -1
-	}else{
-		equal :=0
-		for i := range main {
-			for j :=i; j<total; j++ {
-				if check[j] == main[i] {
-					equal++
-					
+	if chlen <= mlen {
+		j := 0
+		ind := 0
+		for i := 0; i < mlen; i++ {
+			if main[i] == check[j] {
+				j++
+				if j == chlen {
+					break
 				}
-	
+			} else {
+				ind = i
+				j = 0
 			}
-			fmt.Println(equal)
-			if equal ==total{
-				return ind
-			}
-			equal =0
-			ind++
+
 		}
-		return -1
+		if j == chlen {
+			if ind == 0 && main[0] == check[0] {
+				return 0
+			} else {
+				return ind + 1
+			}
+
+		} else {
+			return -1
+		}
+
 	}
-
-
+	return -1
 
 }
 
-func main(){
-	fmt.Println(Index("8eLp47Gz~5{/c", "eLp4"))
-}
