@@ -12,8 +12,14 @@ func SplitWhiteSpaces(str string) []string {
 	ans := make([]string, count)
 	j := 0
 	ans[0] = ""
+
 	for _, st := range s {
+
 		if st == ' ' {
+			if ans[j] == "" {
+				continue
+			}
+
 			j++
 			ans[j] = ""
 			continue
